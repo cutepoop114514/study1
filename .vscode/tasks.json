@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "一键烧录 STM32",
+            "type": "shell",
+            "command": "C:/Users/34961/AppData/Local/stm32cube/bundles/programmer/2.23.0/bin/STM32_Programmer_CLI.exe",
+            "args": [
+                "-c", "port=SWD", "interface=CMSIS-DAP", 
+                "-w", "${workspaceFolder}/build/Debug/CUTPOOP114514.elf",
+                "-v", "-rst"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
